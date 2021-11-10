@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hexaia</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/svg" href="assets/img/favicon.svg" />
+
+    <script src="js/three.js"></script>
+    <script src="https://unpkg.com/three@0.87.1/build/three.js"></script>
+    <script src="https://unpkg.com/three@0.87.1/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://unpkg.com/three@0.87.1/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="titleScreen">
+      <h1>Hexaia</h1>
+      <p>Please enter your username</p>
+
+      <div class="form input" action="index.html">
+        <input type="text" name="username" placeholder="Username" />
+        <button type="submit" name="submitUsername">
+          <img src="assets/img/checkmark.svg" alt="Enter" />
+        </button>
+      </div>
+    </div>
+
+    <header>
+      <h2>Hexaia</h2>
+      <h3>TheUserName</h3>
+    </header>
+
+    <div class="tools transitioning">
+      <div class="tool" data-index="0">
+        <img
+          src="assets/img/select.svg"
+          alt="Selection Tool"
+          class="hidden removed"
+        />
+        <img src="assets/img/select-full.svg" alt="Selection Tool" />
+      </div>
+      <div class="tool" data-index="1">
+        <img src="assets/img/tile.svg" alt="Tile Tool" />
+        <img
+          src="assets/img/tile-full.svg"
+          alt="Tile Tool"
+          class="hidden removed"
+        />
+      </div>
+      <div class="tool" data-index="2">
+        <img src="assets/img/territory.svg" alt="Territory Tool" />
+        <img
+          src="assets/img/territory-full.svg"
+          alt="Territory Tool"
+          class="hidden removed"
+        />
+      </div>
+      <div class="tool" data-index="3">
+        <img src="assets/img/palette.svg" alt="Palette Tool" />
+        <img
+          src="assets/img/palette-full.svg"
+          alt="Palette Tool"
+          class="hidden removed"
+        />
+      </div>
+      <div class="tool" data-index="4">
+        <img src="assets/img/population.svg" alt="Population Tool" />
+        <img
+          src="assets/img/population-full.svg"
+          alt="Population Tool"
+          class="hidden removed"
+        />
+      </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="currency">
+      <p>9</p>
+      <img src="assets/img/currency.png" alt="Currency" />
+    </div>
+  </body>
+</html>

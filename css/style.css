@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  font-weight: 400;
+  font-family: "Bahnschrift", sans-serif;
+
+  color: white;
+  background-color: #15131a;
+
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 84px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* TOOL CLASS STYLES */
+
+.hidden {
+  opacity: 0;
+}
+
+.transitioning {
+  transition: 0.4s all;
+}
+
+.removed {
+  display: none !important;
+}
+
+/* TITLE SCREEN STYLES */
+
+.titleScreen {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #15131a;
+
+  font-family: "Bahnschrift SemiCondensed", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.titleScreen h1 {
+  margin-bottom: 180px;
+}
+
+.titleScreen p {
+  margin-bottom: 40px;
+
+  font-size: 24px;
+}
+
+.titleScreen .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleScreen .input input {
+  width: 312px;
+  height: 32px;
+
+  font-size: 20px;
+  font-family: "Bahnschrift SemiCondensed", sans-serif;
+
+  color: white;
+  background-color: transparent;
+
+  border: none;
+  border-bottom: solid 4px white;
+  border-radius: 0 0 0 4px;
+}
+
+.titleScreen .input button {
+  width: 48px;
+  height: 32px;
+
+  background-color: white;
+
+  border: none;
+  border-radius: 4px 16px 16px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+/* HEADER STYLES */
+
+header {
+  font-family: "Bahnschrift SemiCondensed", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  position: fixed;
+  top: 32px;
+  right: 40px;
+}
+
+header h3 {
+  margin-top: -4px;
+}
+
+/* TOOLBAR STYLES */
+
+.tools {
+  margin-top: -54px;
+  margin-right: 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  left: 32px;
+  top: 50vh;
+}
+
+.tools .tool {
+  height: 54px;
+
+  margin-top: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.separator {
+  width: 4px;
+  height: 80px;
+
+  margin-top: -40px;
+
+  background-color: white;
+
+  border-radius: 2px;
+
+  position: fixed;
+  left: 112px;
+  top: 50vh;
+}
+
+/* CURRENCY STYLES */
+
+.currency {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+}
+
+.currency p {
+  margin-right: 16px;
+  margin-top: 4px;
+
+  font-size: 36px;
+  font-weight: 700;
+}
